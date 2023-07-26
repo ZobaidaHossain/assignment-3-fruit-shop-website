@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fruit Burst</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/2f24d077f2.js" crossorigin="anonymous"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .font{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
 </head>
-<body>
+<body class="font">
+    <header class="max-w-screen-xl mx-auto my-1 py-5 px-8 md:px-8 lg:px-1">
+        <div class="navbar bg-white md:bg-[#F85559] lg:bg-[#F85559] rounded-full">
+            <div class="navbar-start ">
+                <div class="flex items-center sm:flex md:hidden lg:hidden">
+                    <img class="w-7 flex-shrink-0" src="./images/logo.png" alt="">
+                    <h3 class="text-xl text-black font-bold">Fruit Burst</h3>
+                  </div>
+                  
+                <!--
+                <div class="sm:flex items-center md:hidden lg:hidden">
+                    <img class="w-7" src="./images/logo.png" alt="">
+                    <h3 class="text-xl text-black font-bold ">Fruit Burst</h3>
+                 
+                </div>-->
+              
+              <div class="hidden md:flex text-lg font-medium text-zinc-50">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+            </div>
+            <div class="navbar-center hidden md:flex gap-2">
+                <img src="./images/logo.png" alt="">
+                <h3 class="text-4xl text-zinc-50 font-bold ">Fruit Burst</h3>
+             
+            </div>
+            <div class="navbar-end pr-6 ">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                          
+                          
+                      </label>
+                      
+                    <!--
+                    <label tabindex="0" class="btn btn-ghost md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      </label>-->
+                   
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                   
+                  </div>
+                  
+                <input type="text" placeholder="Type here" class=" hidden md:flex input  rounded-full border-none  w-full max-w-xs" />
+                <i class="hidden md:flex fa-solid fa-magnifying-glass -ml-9 text-gray-400" ></i>
+            
+            </div>
+          </div>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
